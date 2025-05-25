@@ -4,7 +4,7 @@
 
 int main(){
     int dig;
-    printf("Enter 2 digit num: ");
+    printf("Enter 2 or 3 digit num: ");
     scanf("%3d", &dig);
     if (dig < 99){
 
