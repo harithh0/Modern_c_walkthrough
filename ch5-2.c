@@ -41,7 +41,10 @@ int main() {
 
   int num;
   printf("Enter 2 dig num:");
-  scanf("%2d", &num);
+  int result = scanf("%2d", &num);
+  if (result != 1) {
+    return -1;
+  }
 
   int f = num / 10;
   int l = num % 10;
@@ -53,9 +56,6 @@ int main() {
   printf("\n");
 
   int i = 10;
-  while (i > 0) {
-    printf("T minus %d and counting\n", i);
-    i--;
-  }
+
   return 0;
 }
